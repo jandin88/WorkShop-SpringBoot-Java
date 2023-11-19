@@ -1,5 +1,6 @@
 package com.project.web_servicespring_boot.config;
 
+<<<<<<< HEAD
 import com.project.web_servicespring_boot.entides.Category;
 import com.project.web_servicespring_boot.entides.Order;
 import com.project.web_servicespring_boot.entides.Product;
@@ -8,6 +9,12 @@ import com.project.web_servicespring_boot.entides.enuns.OrderStatus;
 import com.project.web_servicespring_boot.repositories.CategoryRepository;
 import com.project.web_servicespring_boot.repositories.OrderRepository;
 import com.project.web_servicespring_boot.repositories.ProductRepository;
+=======
+import com.project.web_servicespring_boot.entides.Order;
+import com.project.web_servicespring_boot.entides.User;
+import com.project.web_servicespring_boot.entides.enuns.OrderStatus;
+import com.project.web_servicespring_boot.repositories.OrderRepository;
+>>>>>>> 2e2f3bf2584718a7c7c98ea41d9a3856cd7a3287
 import com.project.web_servicespring_boot.repositories.UseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -15,7 +22,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import java.time.Instant;
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> 2e2f3bf2584718a7c7c98ea41d9a3856cd7a3287
 import java.util.Arrays;
 
 @Configuration
@@ -27,6 +37,7 @@ public class TesteConfig implements CommandLineRunner {
     private UseRepository useRepository;
     @Autowired
     private OrderRepository orderRepository;
+<<<<<<< HEAD
     @Autowired
     private CategoryRepository categoryRepository;
     @Autowired
@@ -41,6 +52,11 @@ public class TesteConfig implements CommandLineRunner {
 
         categoryRepository.saveAll(Arrays.asList(cat1,cat2,cat3));
 
+=======
+
+    @Override
+    public void run(String... args) throws Exception {
+>>>>>>> 2e2f3bf2584718a7c7c98ea41d9a3856cd7a3287
         User u1= new User(null,"Maria Brow","maria@gmail.com.br","999874562","123456");
         User u2= new User(null,"Alex Green","alex@gmail.com.br","256421887","98752");
 
@@ -52,6 +68,7 @@ public class TesteConfig implements CommandLineRunner {
         Order o3 = new Order(null, Instant.parse("2019-07-22T15:21:22Z"),OrderStatus.PAID, u1);
 
         orderRepository.saveAll(Arrays.asList(o1,o2,o3));
+<<<<<<< HEAD
 
 
 
@@ -62,5 +79,7 @@ public class TesteConfig implements CommandLineRunner {
         Product p5 = new Product(null, "Rails for Dummies", "Cras fringilla convallis sem vel faucibus.", 100.99, "");
 
         productRepository.saveAll(Arrays.asList(p1,p2,p3,p4,p5));
+=======
+>>>>>>> 2e2f3bf2584718a7c7c98ea41d9a3856cd7a3287
     }
 }
