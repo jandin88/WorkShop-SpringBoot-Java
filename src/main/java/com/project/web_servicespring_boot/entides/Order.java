@@ -31,6 +31,9 @@ public class Order implements Serializable {
     @OneToMany(mappedBy = "id.order")
     private Set<OrderItem> items= new HashSet<>();
 
+    @OneToOne(mappedBy = "order",cascade = CascadeType.ALL)
+    private Payment payment;
+
     public Order(){}
 
     public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
@@ -72,6 +75,22 @@ public class Order implements Serializable {
         return items;
     }
 
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
+
+    public Double getTotal(){
+        double sum=0.0;
+        for(OrderItem item: items){
+            sum+=item.getSubTotal();
+        }
+        return sum;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
