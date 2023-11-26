@@ -2,9 +2,11 @@ package com.project.web_servicespring_boot.service;
 
 import com.project.web_servicespring_boot.entides.User;
 import com.project.web_servicespring_boot.repositories.UseRepository;
+import com.project.web_servicespring_boot.service.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.lang.module.ResolutionException;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,7 +21,7 @@ public class UserService {
 
     public User findById(long id){
         Optional<User>obj=repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(()-> new ResourceNotFoundException(id));
     }
 
     public User insertUser(User user){
