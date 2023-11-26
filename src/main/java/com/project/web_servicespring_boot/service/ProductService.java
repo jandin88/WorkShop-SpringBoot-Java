@@ -1,6 +1,6 @@
 package com.project.web_servicespring_boot.service;
 
-import com.project.web_servicespring_boot.entides.Product;
+import com.project.web_servicespring_boot.entities.Product;
 import com.project.web_servicespring_boot.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

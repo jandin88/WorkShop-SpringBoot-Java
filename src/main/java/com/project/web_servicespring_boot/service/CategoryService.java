@@ -1,6 +1,6 @@
 package com.project.web_servicespring_boot.service;
 
-import com.project.web_servicespring_boot.entides.Category;
+import com.project.web_servicespring_boot.entities.Category;
 
 import com.project.web_servicespring_boot.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;

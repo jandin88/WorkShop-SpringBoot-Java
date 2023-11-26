@@ -1,7 +1,7 @@
 package com.project.web_servicespring_boot.config;
 
-import com.project.web_servicespring_boot.entides.*;
-import com.project.web_servicespring_boot.entides.enuns.OrderStatus;
+import com.project.web_servicespring_boot.entities.*;
+import com.project.web_servicespring_boot.entities.enuns.OrderStatus;
 import com.project.web_servicespring_boot.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import java.time.Instant;
-import java.util.ArrayList;
 
 import java.util.Arrays;
 

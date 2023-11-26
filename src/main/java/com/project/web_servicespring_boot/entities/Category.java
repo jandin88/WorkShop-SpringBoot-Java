@@ -1,4 +1,4 @@
-package com.project.web_servicespring_boot.entides;
+package com.project.web_servicespring_boot.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

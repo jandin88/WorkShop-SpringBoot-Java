@@ -1,4 +1,4 @@
-package com.project.web_servicespring_boot.entides.enuns;
+package com.project.web_servicespring_boot.entities.enuns;
 
 public enum OrderStatus {
     WAITING_PAGAMENTO(0),

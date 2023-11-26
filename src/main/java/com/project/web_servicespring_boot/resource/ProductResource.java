@@ -1,6 +1,6 @@
 package com.project.web_servicespring_boot.resource;
 
-import com.project.web_servicespring_boot.entides.Product;
+import com.project.web_servicespring_boot.entities.Product;
 import com.project.web_servicespring_boot.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

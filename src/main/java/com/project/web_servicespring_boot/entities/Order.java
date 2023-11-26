@@ -1,8 +1,7 @@
-package com.project.web_servicespring_boot.entides;
+package com.project.web_servicespring_boot.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.project.web_servicespring_boot.entides.enuns.OrderStatus;
+import com.project.web_servicespring_boot.entities.enuns.OrderStatus;
 import jakarta.persistence.*;
 
 import java.io.Serializable;

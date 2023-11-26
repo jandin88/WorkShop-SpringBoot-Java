@@ -1,7 +1,6 @@
 package com.project.web_servicespring_boot.service;
 
-import com.project.web_servicespring_boot.entides.Order;
-import com.project.web_servicespring_boot.entides.User;
+import com.project.web_servicespring_boot.entities.Order;
 import com.project.web_servicespring_boot.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

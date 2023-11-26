@@ -1,8 +1,7 @@
 package com.project.web_servicespring_boot.resource;
 
-import com.project.web_servicespring_boot.entides.Order;
+import com.project.web_servicespring_boot.entities.Order;
 import com.project.web_servicespring_boot.service.OrderService;
-import com.project.web_servicespring_boot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

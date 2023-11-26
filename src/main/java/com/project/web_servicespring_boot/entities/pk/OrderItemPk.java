@@ -1,7 +1,7 @@
-package com.project.web_servicespring_boot.entides.pk;
+package com.project.web_servicespring_boot.entities.pk;
 
-import com.project.web_servicespring_boot.entides.Order;
-import com.project.web_servicespring_boot.entides.Product;
+import com.project.web_servicespring_boot.entities.Order;
+import com.project.web_servicespring_boot.entities.Product;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

@@ -1,8 +1,8 @@
-package com.project.web_servicespring_boot.entides;
+package com.project.web_servicespring_boot.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.project.web_servicespring_boot.entides.pk.OrderItemPk;
+import com.project.web_servicespring_boot.entities.pk.OrderItemPk;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
